@@ -120,10 +120,11 @@
             this.Controls.Add(this.lblExplanation);
             this.MinimumSize = new System.Drawing.Size(358, 258);
             this.Name = "WorkerForm";
-            this.Text = "WorkerForm";
+            this.Text = "Workers";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
