@@ -95,5 +95,23 @@ namespace CustomerMaintenanceSystem {
                 return ResourceManager.GetString("CustomerNameTextBoxValidationErrorMessage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please specify a valid car number..
+        /// </summary>
+        internal static string JobDetailsCarNoTextBoxValidationErrorMessage {
+            get {
+                return ResourceManager.GetString("JobDetailsCarNoTextBoxValidationErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job date should not be in the future..
+        /// </summary>
+        internal static string JobDetailsJobDateDateTimePickerValidationErrorMessage {
+            get {
+                return ResourceManager.GetString("JobDetailsJobDateDateTimePickerValidationErrorMessage", resourceCulture);
+            }
+        }
     }
 }

@@ -56,6 +56,7 @@
         private System.Windows.Forms.Button buttonCancelAll;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.ErrorProvider errorProviderJobDetailsForm;
 
         /// <summary>
         /// Required designer variable.
@@ -84,6 +85,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelCarNo = new System.Windows.Forms.Label();
             this.textBoxCarNo = new System.Windows.Forms.TextBox();
             this.labelJobDate = new System.Windows.Forms.Label();
@@ -138,6 +140,7 @@
             this.buttonCancelAll = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.errorProviderJobDetailsForm = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWorkerId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTuning)).BeginInit();
@@ -156,6 +159,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlugQty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFuelFilter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAirFilter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderJobDetailsForm)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCarNo
@@ -648,6 +652,7 @@
             this.buttonAdd.TabIndex = 48;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // buttonDelete
             // 
@@ -684,6 +689,7 @@
             this.buttonUpdate.TabIndex = 52;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.ButtonUpdate_Click);
             // 
             // buttonExit
             // 
@@ -694,6 +700,10 @@
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.ButtonExit_Click);
+            // 
+            // errorProviderJobDetailsForm
+            // 
+            this.errorProviderJobDetailsForm.ContainerControl = this;
             // 
             // JobDetailsForm
             // 
@@ -756,6 +766,7 @@
             this.Controls.Add(this.labelCarNo);
             this.Name = "JobDetailsForm";
             this.Text = "Job Details";
+            this.Load += new System.EventHandler(this.JobDetailsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWorkerId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTuning)).EndInit();
@@ -774,6 +785,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlugQty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFuelFilter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAirFilter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderJobDetailsForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
