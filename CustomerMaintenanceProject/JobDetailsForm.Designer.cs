@@ -50,6 +50,8 @@
         private System.Windows.Forms.Label kmsLabel;
         private System.Windows.Forms.Label pointLabel;
         private System.Windows.Forms.ErrorProvider errorProvider;
+        private System.Windows.Forms.BindingSource customerBindingSource;
+        private CustomerMaintenanceSystemDatabaseDataSetTableAdapters.CustomerTableAdapter customerTableAdapter;
 
         /// <summary>
         /// Required designer variable.
@@ -945,8 +947,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource customerBindingSource;
-        private CustomerMaintenanceSystemDatabaseDataSetTableAdapters.CustomerTableAdapter customerTableAdapter;
     }
 }

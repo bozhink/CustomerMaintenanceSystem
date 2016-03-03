@@ -2,13 +2,13 @@
 {
     public partial class ReportsForm
     {
-        private System.Windows.Forms.Label labelMessage;
-        private System.Windows.Forms.GroupBox groupBoxReports;
-        private System.Windows.Forms.RadioButton radioButtonMonthlyWorkerReport;
-        private System.Windows.Forms.RadioButton radioButtonMonthlyBalancingAndAlignmentReport;
-        private System.Windows.Forms.RadioButton radioButtonMonthlyConsumerVisitReport;
-        private System.Windows.Forms.RadioButton radioButtonMonthlyConsumableReport;
-        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Label descriptionLabel;
+        private System.Windows.Forms.GroupBox reportsGroupBox;
+        private System.Windows.Forms.RadioButton monthlyWorkerReportRadioButton;
+        private System.Windows.Forms.RadioButton monthlyBalancingAndAlignmentReportRadioButton;
+        private System.Windows.Forms.RadioButton monthlyConsumerVisitReportRadioButton;
+        private System.Windows.Forms.RadioButton monthlyConsumableReportRadioButton;
+        private System.Windows.Forms.Button exitButton;
 
         /// <summary>
         /// Required designer variable.
@@ -37,105 +37,106 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelMessage = new System.Windows.Forms.Label();
-            this.groupBoxReports = new System.Windows.Forms.GroupBox();
-            this.radioButtonMonthlyWorkerReport = new System.Windows.Forms.RadioButton();
-            this.radioButtonMonthlyBalancingAndAlignmentReport = new System.Windows.Forms.RadioButton();
-            this.radioButtonMonthlyConsumerVisitReport = new System.Windows.Forms.RadioButton();
-            this.radioButtonMonthlyConsumableReport = new System.Windows.Forms.RadioButton();
-            this.buttonExit = new System.Windows.Forms.Button();
-            this.groupBoxReports.SuspendLayout();
+            this.descriptionLabel = new System.Windows.Forms.Label();
+            this.reportsGroupBox = new System.Windows.Forms.GroupBox();
+            this.monthlyWorkerReportRadioButton = new System.Windows.Forms.RadioButton();
+            this.monthlyBalancingAndAlignmentReportRadioButton = new System.Windows.Forms.RadioButton();
+            this.monthlyConsumerVisitReportRadioButton = new System.Windows.Forms.RadioButton();
+            this.monthlyConsumableReportRadioButton = new System.Windows.Forms.RadioButton();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.reportsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // labelMessage
+            // descriptionLabel
             // 
-            this.labelMessage.AutoSize = true;
-            this.labelMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMessage.Location = new System.Drawing.Point(13, 13);
-            this.labelMessage.Name = "labelMessage";
-            this.labelMessage.Size = new System.Drawing.Size(320, 16);
-            this.labelMessage.TabIndex = 0;
-            this.labelMessage.Text = "Select the radio button to generate the report.";
+            this.descriptionLabel.AutoSize = true;
+            this.descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionLabel.Location = new System.Drawing.Point(13, 13);
+            this.descriptionLabel.Name = "descriptionLabel";
+            this.descriptionLabel.Size = new System.Drawing.Size(329, 16);
+            this.descriptionLabel.TabIndex = 0;
+            this.descriptionLabel.Text = "Select the radio button to generate the report.";
             // 
-            // groupBoxReports
+            // reportsGroupBox
             // 
-            this.groupBoxReports.Controls.Add(this.radioButtonMonthlyWorkerReport);
-            this.groupBoxReports.Controls.Add(this.radioButtonMonthlyBalancingAndAlignmentReport);
-            this.groupBoxReports.Controls.Add(this.radioButtonMonthlyConsumerVisitReport);
-            this.groupBoxReports.Controls.Add(this.radioButtonMonthlyConsumableReport);
-            this.groupBoxReports.Location = new System.Drawing.Point(13, 36);
-            this.groupBoxReports.Name = "groupBoxReports";
-            this.groupBoxReports.Size = new System.Drawing.Size(227, 119);
-            this.groupBoxReports.TabIndex = 1;
-            this.groupBoxReports.TabStop = false;
-            this.groupBoxReports.Text = "Reports";
+            this.reportsGroupBox.Controls.Add(this.monthlyWorkerReportRadioButton);
+            this.reportsGroupBox.Controls.Add(this.monthlyBalancingAndAlignmentReportRadioButton);
+            this.reportsGroupBox.Controls.Add(this.monthlyConsumerVisitReportRadioButton);
+            this.reportsGroupBox.Controls.Add(this.monthlyConsumableReportRadioButton);
+            this.reportsGroupBox.Location = new System.Drawing.Point(13, 36);
+            this.reportsGroupBox.Name = "reportsGroupBox";
+            this.reportsGroupBox.Size = new System.Drawing.Size(227, 119);
+            this.reportsGroupBox.TabIndex = 1;
+            this.reportsGroupBox.TabStop = false;
+            this.reportsGroupBox.Text = "Reports";
             // 
-            // radioButtonMonthlyWorkerReport
+            // monthlyWorkerReportRadioButton
             // 
-            this.radioButtonMonthlyWorkerReport.AutoSize = true;
-            this.radioButtonMonthlyWorkerReport.Location = new System.Drawing.Point(7, 92);
-            this.radioButtonMonthlyWorkerReport.Name = "radioButtonMonthlyWorkerReport";
-            this.radioButtonMonthlyWorkerReport.Size = new System.Drawing.Size(135, 17);
-            this.radioButtonMonthlyWorkerReport.TabIndex = 3;
-            this.radioButtonMonthlyWorkerReport.TabStop = true;
-            this.radioButtonMonthlyWorkerReport.Text = "Monthly Worker Report";
-            this.radioButtonMonthlyWorkerReport.UseVisualStyleBackColor = true;
+            this.monthlyWorkerReportRadioButton.AutoSize = true;
+            this.monthlyWorkerReportRadioButton.Location = new System.Drawing.Point(7, 92);
+            this.monthlyWorkerReportRadioButton.Name = "monthlyWorkerReportRadioButton";
+            this.monthlyWorkerReportRadioButton.Size = new System.Drawing.Size(135, 17);
+            this.monthlyWorkerReportRadioButton.TabIndex = 3;
+            this.monthlyWorkerReportRadioButton.TabStop = true;
+            this.monthlyWorkerReportRadioButton.Text = "Monthly Worker Report";
+            this.monthlyWorkerReportRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButtonMonthlyBalancingAndAlignmentReport
+            // monthlyBalancingAndAlignmentReportRadioButton
             // 
-            this.radioButtonMonthlyBalancingAndAlignmentReport.AutoSize = true;
-            this.radioButtonMonthlyBalancingAndAlignmentReport.Location = new System.Drawing.Point(7, 68);
-            this.radioButtonMonthlyBalancingAndAlignmentReport.Name = "radioButtonMonthlyBalancingAndAlignmentReport";
-            this.radioButtonMonthlyBalancingAndAlignmentReport.Size = new System.Drawing.Size(217, 17);
-            this.radioButtonMonthlyBalancingAndAlignmentReport.TabIndex = 2;
-            this.radioButtonMonthlyBalancingAndAlignmentReport.TabStop = true;
-            this.radioButtonMonthlyBalancingAndAlignmentReport.Text = "Monthly Balancing and Alignment Report";
-            this.radioButtonMonthlyBalancingAndAlignmentReport.UseVisualStyleBackColor = true;
+            this.monthlyBalancingAndAlignmentReportRadioButton.AutoSize = true;
+            this.monthlyBalancingAndAlignmentReportRadioButton.Location = new System.Drawing.Point(7, 68);
+            this.monthlyBalancingAndAlignmentReportRadioButton.Name = "monthlyBalancingAndAlignmentReportRadioButton";
+            this.monthlyBalancingAndAlignmentReportRadioButton.Size = new System.Drawing.Size(217, 17);
+            this.monthlyBalancingAndAlignmentReportRadioButton.TabIndex = 2;
+            this.monthlyBalancingAndAlignmentReportRadioButton.TabStop = true;
+            this.monthlyBalancingAndAlignmentReportRadioButton.Text = "Monthly Balancing and Alignment Report";
+            this.monthlyBalancingAndAlignmentReportRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButtonMonthlyConsumerVisitReport
+            // monthlyConsumerVisitReportRadioButton
             // 
-            this.radioButtonMonthlyConsumerVisitReport.AutoSize = true;
-            this.radioButtonMonthlyConsumerVisitReport.Location = new System.Drawing.Point(7, 44);
-            this.radioButtonMonthlyConsumerVisitReport.Name = "radioButtonMonthlyConsumerVisitReport";
-            this.radioButtonMonthlyConsumerVisitReport.Size = new System.Drawing.Size(169, 17);
-            this.radioButtonMonthlyConsumerVisitReport.TabIndex = 1;
-            this.radioButtonMonthlyConsumerVisitReport.TabStop = true;
-            this.radioButtonMonthlyConsumerVisitReport.Text = "Monthly Consumer Visit Report";
-            this.radioButtonMonthlyConsumerVisitReport.UseVisualStyleBackColor = true;
+            this.monthlyConsumerVisitReportRadioButton.AutoSize = true;
+            this.monthlyConsumerVisitReportRadioButton.Location = new System.Drawing.Point(7, 44);
+            this.monthlyConsumerVisitReportRadioButton.Name = "monthlyConsumerVisitReportRadioButton";
+            this.monthlyConsumerVisitReportRadioButton.Size = new System.Drawing.Size(169, 17);
+            this.monthlyConsumerVisitReportRadioButton.TabIndex = 1;
+            this.monthlyConsumerVisitReportRadioButton.TabStop = true;
+            this.monthlyConsumerVisitReportRadioButton.Text = "Monthly Consumer Visit Report";
+            this.monthlyConsumerVisitReportRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButtonMonthlyConsumableReport
+            // monthlyConsumableReportRadioButton
             // 
-            this.radioButtonMonthlyConsumableReport.AutoSize = true;
-            this.radioButtonMonthlyConsumableReport.Location = new System.Drawing.Point(7, 20);
-            this.radioButtonMonthlyConsumableReport.Name = "radioButtonMonthlyConsumableReport";
-            this.radioButtonMonthlyConsumableReport.Size = new System.Drawing.Size(158, 17);
-            this.radioButtonMonthlyConsumableReport.TabIndex = 0;
-            this.radioButtonMonthlyConsumableReport.TabStop = true;
-            this.radioButtonMonthlyConsumableReport.Text = "Monthly Consumable Report";
-            this.radioButtonMonthlyConsumableReport.UseVisualStyleBackColor = true;
+            this.monthlyConsumableReportRadioButton.AutoSize = true;
+            this.monthlyConsumableReportRadioButton.Location = new System.Drawing.Point(7, 20);
+            this.monthlyConsumableReportRadioButton.Name = "monthlyConsumableReportRadioButton";
+            this.monthlyConsumableReportRadioButton.Size = new System.Drawing.Size(158, 17);
+            this.monthlyConsumableReportRadioButton.TabIndex = 0;
+            this.monthlyConsumableReportRadioButton.TabStop = true;
+            this.monthlyConsumableReportRadioButton.Text = "Monthly Consumable Report";
+            this.monthlyConsumableReportRadioButton.UseVisualStyleBackColor = true;
             // 
-            // buttonExit
+            // exitButton
             // 
-            this.buttonExit.Location = new System.Drawing.Point(13, 167);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(75, 23);
-            this.buttonExit.TabIndex = 2;
-            this.buttonExit.Text = "Exit";
-            this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.ButtonExit_Click);
+            this.exitButton.Location = new System.Drawing.Point(13, 167);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 2;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // ReportsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 204);
-            this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.groupBoxReports);
-            this.Controls.Add(this.labelMessage);
+            this.ClientSize = new System.Drawing.Size(344, 201);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.reportsGroupBox);
+            this.Controls.Add(this.descriptionLabel);
+            this.MinimumSize = new System.Drawing.Size(360, 240);
             this.Name = "ReportsForm";
             this.Text = "Reports";
-            this.groupBoxReports.ResumeLayout(false);
-            this.groupBoxReports.PerformLayout();
+            this.reportsGroupBox.ResumeLayout(false);
+            this.reportsGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
