@@ -246,7 +246,7 @@ SELECT CarNo, JobDate, WorkerId, KMs, Tuning, Alignment, Balancing, Tires, Weigh
               <Mapping SourceColumn="OilFilter" DataSetColumn="OilFilter" />
               <Mapping SourceColumn="GearOil" DataSetColumn="GearOil" />
               <Mapping SourceColumn="GearOilQty" DataSetColumn="GearOilQty" />
-              <Mapping SourceColumn="Point " DataSetColumn="Point " />
+              <Mapping SourceColumn="Point " DataSetColumn="Point" />
               <Mapping SourceColumn="Condenser" DataSetColumn="Condenser" />
               <Mapping SourceColumn="Plug" DataSetColumn="Plug" />
               <Mapping SourceColumn="PlugQty" DataSetColumn="PlugQty" />
@@ -314,7 +314,7 @@ SELECT Id, Name FROM cms.Worker WHERE (Id = @Id)</CommandText>
   <xs:element name="CustomerMaintenanceSystemDatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CustomerMaintenanceSystemDatabaseDataSet" msprop:Generator_UserDSName="CustomerMaintenanceSystemDatabaseDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Customer" msprop:Generator_TableClassName="CustomerDataTable" msprop:Generator_TableVarName="tableCustomer" msprop:Generator_TablePropName="Customer" msprop:Generator_RowDeletingName="CustomerRowDeleting" msprop:Generator_RowChangingName="CustomerRowChanging" msprop:Generator_RowEvHandlerName="CustomerRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomerRowDeleted" msprop:Generator_UserTableName="Customer" msprop:Generator_RowChangedName="CustomerRowChanged" msprop:Generator_RowEvArgName="CustomerRowChangeEvent" msprop:Generator_RowClassName="CustomerRow">
+        <xs:element name="Customer" msprop:Generator_TableClassName="CustomerDataTable" msprop:Generator_TableVarName="tableCustomer" msprop:Generator_RowChangedName="CustomerRowChanged" msprop:Generator_TablePropName="Customer" msprop:Generator_RowDeletingName="CustomerRowDeleting" msprop:Generator_RowChangingName="CustomerRowChanging" msprop:Generator_RowEvHandlerName="CustomerRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomerRowDeleted" msprop:Generator_RowClassName="CustomerRow" msprop:Generator_UserTableName="Customer" msprop:Generator_RowEvArgName="CustomerRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CarNo" msprop:Generator_ColumnVarNameInTable="columnCarNo" msprop:Generator_ColumnPropNameInRow="CarNo" msprop:Generator_ColumnPropNameInTable="CarNoColumn" msprop:Generator_UserColumnName="CarNo">
@@ -348,7 +348,7 @@ SELECT Id, Name FROM cms.Worker WHERE (Id = @Id)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="JobDetails" msprop:Generator_TableClassName="JobDetailsDataTable" msprop:Generator_TableVarName="tableJobDetails" msprop:Generator_TablePropName="JobDetails" msprop:Generator_RowDeletingName="JobDetailsRowDeleting" msprop:Generator_RowChangingName="JobDetailsRowChanging" msprop:Generator_RowEvHandlerName="JobDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="JobDetailsRowDeleted" msprop:Generator_UserTableName="JobDetails" msprop:Generator_RowChangedName="JobDetailsRowChanged" msprop:Generator_RowEvArgName="JobDetailsRowChangeEvent" msprop:Generator_RowClassName="JobDetailsRow">
+        <xs:element name="JobDetails" msprop:Generator_TableClassName="JobDetailsDataTable" msprop:Generator_TableVarName="tableJobDetails" msprop:Generator_RowChangedName="JobDetailsRowChanged" msprop:Generator_TablePropName="JobDetails" msprop:Generator_RowDeletingName="JobDetailsRowDeleting" msprop:Generator_RowChangingName="JobDetailsRowChanging" msprop:Generator_RowEvHandlerName="JobDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="JobDetailsRowDeleted" msprop:Generator_RowClassName="JobDetailsRow" msprop:Generator_UserTableName="JobDetails" msprop:Generator_RowEvArgName="JobDetailsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CarNo" msprop:Generator_ColumnVarNameInTable="columnCarNo" msprop:Generator_ColumnPropNameInRow="CarNo" msprop:Generator_ColumnPropNameInTable="CarNoColumn" msprop:Generator_UserColumnName="CarNo">
@@ -371,7 +371,7 @@ SELECT Id, Name FROM cms.Worker WHERE (Id = @Id)</CommandText>
               <xs:element name="OilFilter" msprop:Generator_ColumnVarNameInTable="columnOilFilter" msprop:Generator_ColumnPropNameInRow="OilFilter" msprop:Generator_ColumnPropNameInTable="OilFilterColumn" msprop:Generator_UserColumnName="OilFilter" type="xs:int" minOccurs="0" />
               <xs:element name="GearOil" msprop:Generator_ColumnVarNameInTable="columnGearOil" msprop:Generator_ColumnPropNameInRow="GearOil" msprop:Generator_ColumnPropNameInTable="GearOilColumn" msprop:Generator_UserColumnName="GearOil" type="xs:int" minOccurs="0" />
               <xs:element name="GearOilQty" msprop:Generator_ColumnVarNameInTable="columnGearOilQty" msprop:Generator_ColumnPropNameInRow="GearOilQty" msprop:Generator_ColumnPropNameInTable="GearOilQtyColumn" msprop:Generator_UserColumnName="GearOilQty" type="xs:int" minOccurs="0" />
-              <xs:element name="Point_x0020_" msprop:Generator_ColumnVarNameInTable="columnPoint_" msprop:Generator_ColumnPropNameInRow="Point_" msprop:Generator_ColumnPropNameInTable="Point_Column" msprop:Generator_UserColumnName="Point " type="xs:int" minOccurs="0" />
+              <xs:element name="Point" msprop:Generator_ColumnVarNameInTable="columnPoint" msprop:Generator_ColumnPropNameInRow="Point" msprop:Generator_ColumnPropNameInTable="PointColumn" msprop:Generator_UserColumnName="Point" type="xs:int" minOccurs="0" />
               <xs:element name="Condenser" msprop:Generator_ColumnVarNameInTable="columnCondenser" msprop:Generator_ColumnPropNameInRow="Condenser" msprop:Generator_ColumnPropNameInTable="CondenserColumn" msprop:Generator_UserColumnName="Condenser" type="xs:int" minOccurs="0" />
               <xs:element name="Plug" msprop:Generator_ColumnVarNameInTable="columnPlug" msprop:Generator_ColumnPropNameInRow="Plug" msprop:Generator_ColumnPropNameInTable="PlugColumn" msprop:Generator_UserColumnName="Plug" type="xs:int" minOccurs="0" />
               <xs:element name="PlugQty" msprop:Generator_ColumnVarNameInTable="columnPlugQty" msprop:Generator_ColumnPropNameInRow="PlugQty" msprop:Generator_ColumnPropNameInTable="PlugQtyColumn" msprop:Generator_UserColumnName="PlugQty" type="xs:int" minOccurs="0" />
@@ -388,7 +388,7 @@ SELECT Id, Name FROM cms.Worker WHERE (Id = @Id)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Worker" msprop:Generator_TableClassName="WorkerDataTable" msprop:Generator_TableVarName="tableWorker" msprop:Generator_TablePropName="Worker" msprop:Generator_RowDeletingName="WorkerRowDeleting" msprop:Generator_RowChangingName="WorkerRowChanging" msprop:Generator_RowEvHandlerName="WorkerRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkerRowDeleted" msprop:Generator_UserTableName="Worker" msprop:Generator_RowChangedName="WorkerRowChanged" msprop:Generator_RowEvArgName="WorkerRowChangeEvent" msprop:Generator_RowClassName="WorkerRow">
+        <xs:element name="Worker" msprop:Generator_TableClassName="WorkerDataTable" msprop:Generator_TableVarName="tableWorker" msprop:Generator_RowChangedName="WorkerRowChanged" msprop:Generator_TablePropName="Worker" msprop:Generator_RowDeletingName="WorkerRowDeleting" msprop:Generator_RowChangingName="WorkerRowChanging" msprop:Generator_RowEvHandlerName="WorkerRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkerRowDeleted" msprop:Generator_RowClassName="WorkerRow" msprop:Generator_UserTableName="Worker" msprop:Generator_RowEvArgName="WorkerRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -420,8 +420,8 @@ SELECT Id, Name FROM cms.Worker WHERE (Id = @Id)</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Customer_JobDetails" msdata:parent="Customer" msdata:child="JobDetails" msdata:parentkey="CarNo" msdata:childkey="CarNo" msprop:Generator_UserChildTable="JobDetails" msprop:Generator_ChildPropName="GetJobDetailsRows" msprop:Generator_UserRelationName="FK_Customer_JobDetails" msprop:Generator_ParentPropName="CustomerRow" msprop:Generator_RelationVarName="relationFK_Customer_JobDetails" msprop:Generator_UserParentTable="Customer" />
-      <msdata:Relationship name="FK_Worker_JobDetails" msdata:parent="Worker" msdata:child="JobDetails" msdata:parentkey="Id" msdata:childkey="WorkerId" msprop:Generator_UserChildTable="JobDetails" msprop:Generator_ChildPropName="GetJobDetailsRows" msprop:Generator_UserRelationName="FK_Worker_JobDetails" msprop:Generator_RelationVarName="relationFK_Worker_JobDetails" msprop:Generator_UserParentTable="Worker" msprop:Generator_ParentPropName="WorkerRow" />
+      <msdata:Relationship name="FK_Customer_JobDetails" msdata:parent="Customer" msdata:child="JobDetails" msdata:parentkey="CarNo" msdata:childkey="CarNo" msprop:Generator_UserChildTable="JobDetails" msprop:Generator_ChildPropName="GetJobDetailsRows" msprop:Generator_UserRelationName="FK_Customer_JobDetails" msprop:Generator_RelationVarName="relationFK_Customer_JobDetails" msprop:Generator_UserParentTable="Customer" msprop:Generator_ParentPropName="CustomerRow" />
+      <msdata:Relationship name="FK_Worker_JobDetails" msdata:parent="Worker" msdata:child="JobDetails" msdata:parentkey="Id" msdata:childkey="WorkerId" msprop:Generator_UserChildTable="JobDetails" msprop:Generator_ChildPropName="GetJobDetailsRows" msprop:Generator_UserRelationName="FK_Worker_JobDetails" msprop:Generator_ParentPropName="WorkerRow" msprop:Generator_RelationVarName="relationFK_Worker_JobDetails" msprop:Generator_UserParentTable="Worker" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

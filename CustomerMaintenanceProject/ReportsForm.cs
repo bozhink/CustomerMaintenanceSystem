@@ -13,5 +13,11 @@
         {
             this.Close();
         }
+
+        private void MonthlyConsumableReportRadioButton_CheckedChanged(object sender, System.EventArgs e)
+        {
+            var form = new ConsumableForm();
+            form.ShowDialog(this);
+        }
     }
 }

@@ -53,7 +53,7 @@
             this.descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriptionLabel.Location = new System.Drawing.Point(13, 13);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(329, 16);
+            this.descriptionLabel.Size = new System.Drawing.Size(320, 16);
             this.descriptionLabel.TabIndex = 0;
             this.descriptionLabel.Text = "Select the radio button to generate the report.";
             // 
@@ -113,6 +113,7 @@
             this.monthlyConsumableReportRadioButton.TabStop = true;
             this.monthlyConsumableReportRadioButton.Text = "Monthly Consumable Report";
             this.monthlyConsumableReportRadioButton.UseVisualStyleBackColor = true;
+            this.monthlyConsumableReportRadioButton.CheckedChanged += new System.EventHandler(this.MonthlyConsumableReportRadioButton_CheckedChanged);
             // 
             // exitButton
             // 

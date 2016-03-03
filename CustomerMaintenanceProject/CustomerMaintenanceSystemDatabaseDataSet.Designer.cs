@@ -695,7 +695,7 @@ namespace CustomerMaintenanceSystem {
             
             private global::System.Data.DataColumn columnGearOilQty;
             
-            private global::System.Data.DataColumn columnPoint_;
+            private global::System.Data.DataColumn columnPoint;
             
             private global::System.Data.DataColumn columnCondenser;
             
@@ -858,9 +858,9 @@ namespace CustomerMaintenanceSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Point_Column {
+            public global::System.Data.DataColumn PointColumn {
                 get {
-                    return this.columnPoint_;
+                    return this.columnPoint;
                 }
             }
             
@@ -972,7 +972,7 @@ namespace CustomerMaintenanceSystem {
                         int OilFilter, 
                         int GearOil, 
                         int GearOilQty, 
-                        int Point_, 
+                        int Point, 
                         int Condenser, 
                         int Plug, 
                         int PlugQty, 
@@ -996,7 +996,7 @@ namespace CustomerMaintenanceSystem {
                         OilFilter,
                         GearOil,
                         GearOilQty,
-                        Point_,
+                        Point,
                         Condenser,
                         Plug,
                         PlugQty,
@@ -1054,7 +1054,7 @@ namespace CustomerMaintenanceSystem {
                 this.columnOilFilter = base.Columns["OilFilter"];
                 this.columnGearOil = base.Columns["GearOil"];
                 this.columnGearOilQty = base.Columns["GearOilQty"];
-                this.columnPoint_ = base.Columns["Point "];
+                this.columnPoint = base.Columns["Point"];
                 this.columnCondenser = base.Columns["Condenser"];
                 this.columnPlug = base.Columns["Plug"];
                 this.columnPlugQty = base.Columns["PlugQty"];
@@ -1095,8 +1095,8 @@ namespace CustomerMaintenanceSystem {
                 base.Columns.Add(this.columnGearOil);
                 this.columnGearOilQty = new global::System.Data.DataColumn("GearOilQty", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGearOilQty);
-                this.columnPoint_ = new global::System.Data.DataColumn("Point ", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPoint_);
+                this.columnPoint = new global::System.Data.DataColumn("Point", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPoint);
                 this.columnCondenser = new global::System.Data.DataColumn("Condenser", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCondenser);
                 this.columnPlug = new global::System.Data.DataColumn("Plug", typeof(int), null, global::System.Data.MappingType.Element);
@@ -1868,17 +1868,17 @@ namespace CustomerMaintenanceSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Point_ {
+            public int Point {
                 get {
                     try {
-                        return ((int)(this[this.tableJobDetails.Point_Column]));
+                        return ((int)(this[this.tableJobDetails.PointColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Point \' in table \'JobDetails\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Point\' in table \'JobDetails\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableJobDetails.Point_Column] = value;
+                    this[this.tableJobDetails.PointColumn] = value;
                 }
             }
             
@@ -2150,14 +2150,14 @@ namespace CustomerMaintenanceSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsPoint_Null() {
-                return this.IsNull(this.tableJobDetails.Point_Column);
+            public bool IsPointNull() {
+                return this.IsNull(this.tableJobDetails.PointColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetPoint_Null() {
-                this[this.tableJobDetails.Point_Column] = global::System.Convert.DBNull;
+            public void SetPointNull() {
+                this[this.tableJobDetails.PointColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2966,7 +2966,7 @@ SELECT CarNo, Name, Address, Make FROM cms.Customer WHERE (CarNo = @CarNo)";
             tableMapping.ColumnMappings.Add("OilFilter", "OilFilter");
             tableMapping.ColumnMappings.Add("GearOil", "GearOil");
             tableMapping.ColumnMappings.Add("GearOilQty", "GearOilQty");
-            tableMapping.ColumnMappings.Add("Point ", "Point ");
+            tableMapping.ColumnMappings.Add("Point ", "Point");
             tableMapping.ColumnMappings.Add("Condenser", "Condenser");
             tableMapping.ColumnMappings.Add("Plug", "Plug");
             tableMapping.ColumnMappings.Add("PlugQty", "PlugQty");
