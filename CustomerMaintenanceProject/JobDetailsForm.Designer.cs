@@ -21,7 +21,7 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton jobDetailsBindingNavigatorSaveItem;
 
-        private System.Windows.Forms.TextBox carNoTextBox;
+        private System.Windows.Forms.ComboBox carNoComboBox;
         private System.Windows.Forms.DateTimePicker jobDateDateTimePicker;
         private System.Windows.Forms.NumericUpDown workerIdNumericUpDown;
         private System.Windows.Forms.NumericUpDown kmsNumericUpDown;
@@ -119,7 +119,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.jobDetailsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.carNoTextBox = new System.Windows.Forms.TextBox();
+            this.carNoComboBox = new System.Windows.Forms.ComboBox();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jobDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.workerIdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.kmsNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -145,6 +146,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.customerTableAdapter = new CustomerMaintenanceSystem.CustomerMaintenanceSystemDatabaseDataSetTableAdapters.CustomerTableAdapter();
             carNoLabel = new System.Windows.Forms.Label();
             jobDateLabel = new System.Windows.Forms.Label();
             workerIdLabel = new System.Windows.Forms.Label();
@@ -169,6 +171,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.jobDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobDetailsBindingNavigator)).BeginInit();
             this.jobDetailsBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workerIdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kmsNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tuningNumericUpDown)).BeginInit();
@@ -218,15 +221,6 @@
             workerIdLabel.Size = new System.Drawing.Size(57, 13);
             workerIdLabel.TabIndex = 5;
             workerIdLabel.Text = "Worker Id:";
-            // 
-            // kmsLabel
-            // 
-            this.kmsLabel.AutoSize = true;
-            this.kmsLabel.Location = new System.Drawing.Point(12, 108);
-            this.kmsLabel.Name = "kmsLabel";
-            this.kmsLabel.Size = new System.Drawing.Size(31, 13);
-            this.kmsLabel.TabIndex = 7;
-            this.kmsLabel.Text = "KMs:";
             // 
             // tuningLabel
             // 
@@ -318,15 +312,6 @@
             gearOilQtyLabel.TabIndex = 27;
             gearOilQtyLabel.Text = "Gear Oil Qty:";
             // 
-            // pointLabel
-            // 
-            this.pointLabel.AutoSize = true;
-            this.pointLabel.Location = new System.Drawing.Point(357, 105);
-            this.pointLabel.Name = "pointLabel";
-            this.pointLabel.Size = new System.Drawing.Size(37, 13);
-            this.pointLabel.TabIndex = 29;
-            this.pointLabel.Text = "Point :";
-            // 
             // condenserLabel
             // 
             condenserLabel.AutoSize = true;
@@ -390,6 +375,24 @@
             remarksLabel.TabIndex = 43;
             remarksLabel.Text = "Remarks:";
             // 
+            // kmsLabel
+            // 
+            this.kmsLabel.AutoSize = true;
+            this.kmsLabel.Location = new System.Drawing.Point(12, 108);
+            this.kmsLabel.Name = "kmsLabel";
+            this.kmsLabel.Size = new System.Drawing.Size(31, 13);
+            this.kmsLabel.TabIndex = 7;
+            this.kmsLabel.Text = "KMs:";
+            // 
+            // pointLabel
+            // 
+            this.pointLabel.AutoSize = true;
+            this.pointLabel.Location = new System.Drawing.Point(357, 105);
+            this.pointLabel.Name = "pointLabel";
+            this.pointLabel.Size = new System.Drawing.Size(37, 13);
+            this.pointLabel.TabIndex = 29;
+            this.pointLabel.Text = "Point :";
+            // 
             // customerMaintenanceSystemDatabaseDataSet
             // 
             this.customerMaintenanceSystemDatabaseDataSet.DataSetName = "CustomerMaintenanceSystemDatabaseDataSet";
@@ -439,7 +442,7 @@
             this.jobDetailsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.jobDetailsBindingNavigator.Name = "jobDetailsBindingNavigator";
             this.jobDetailsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.jobDetailsBindingNavigator.Size = new System.Drawing.Size(665, 25);
+            this.jobDetailsBindingNavigator.Size = new System.Drawing.Size(664, 25);
             this.jobDetailsBindingNavigator.TabIndex = 0;
             this.jobDetailsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -537,14 +540,22 @@
             this.jobDetailsBindingNavigatorSaveItem.Text = "Save Data";
             this.jobDetailsBindingNavigatorSaveItem.Click += new System.EventHandler(this.JobDetailsBindingNavigatorSaveItem_Click);
             // 
-            // carNoTextBox
+            // carNoComboBox
             // 
-            this.carNoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobDetailsBindingSource, "CarNo", true));
-            this.carNoTextBox.Location = new System.Drawing.Point(86, 27);
-            this.carNoTextBox.MaxLength = 15;
-            this.carNoTextBox.Name = "carNoTextBox";
-            this.carNoTextBox.Size = new System.Drawing.Size(200, 20);
-            this.carNoTextBox.TabIndex = 2;
+            this.carNoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobDetailsBindingSource, "CarNo", true));
+            this.carNoComboBox.DataSource = this.customerBindingSource;
+            this.carNoComboBox.DisplayMember = "CarNo";
+            this.carNoComboBox.Location = new System.Drawing.Point(86, 27);
+            this.carNoComboBox.MaxLength = 15;
+            this.carNoComboBox.Name = "carNoComboBox";
+            this.carNoComboBox.Size = new System.Drawing.Size(200, 21);
+            this.carNoComboBox.TabIndex = 2;
+            this.carNoComboBox.ValueMember = "CarNo";
+            // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataMember = "Customer";
+            this.customerBindingSource.DataSource = this.customerMaintenanceSystemDatabaseDataSet;
             // 
             // jobDateDateTimePicker
             // 
@@ -816,7 +827,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(665, 24);
+            this.menuStrip.Size = new System.Drawing.Size(664, 24);
             this.menuStrip.TabIndex = 45;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -840,11 +851,15 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
+            // customerTableAdapter
+            // 
+            this.customerTableAdapter.ClearBeforeFill = true;
+            // 
             // JobDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 361);
+            this.ClientSize = new System.Drawing.Size(664, 361);
             this.Controls.Add(remarksLabel);
             this.Controls.Add(this.remarksTextBox);
             this.Controls.Add(airFilterLabel);
@@ -888,10 +903,11 @@
             this.Controls.Add(jobDateLabel);
             this.Controls.Add(this.jobDateDateTimePicker);
             this.Controls.Add(carNoLabel);
-            this.Controls.Add(this.carNoTextBox);
+            this.Controls.Add(this.carNoComboBox);
             this.Controls.Add(this.jobDetailsBindingNavigator);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
+            this.MinimumSize = new System.Drawing.Size(680, 400);
             this.Name = "JobDetailsForm";
             this.Text = "Job Details";
             this.Load += new System.EventHandler(this.JobDetailsForm_Load);
@@ -900,6 +916,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.jobDetailsBindingNavigator)).EndInit();
             this.jobDetailsBindingNavigator.ResumeLayout(false);
             this.jobDetailsBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workerIdNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kmsNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tuningNumericUpDown)).EndInit();
@@ -928,5 +945,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.BindingSource customerBindingSource;
+        private CustomerMaintenanceSystemDatabaseDataSetTableAdapters.CustomerTableAdapter customerTableAdapter;
     }
 }

@@ -20,6 +20,7 @@
                 {
                     this.jobDetailsBindingSource.EndEdit();
                     this.tableAdapterManager.UpdateAll(this.customerMaintenanceSystemDatabaseDataSet);
+                    MessageBox.Show(Messages.JobDetailsTableIsUpdatedMessage);
                 }
                 catch (Exception exception)
                 {
@@ -32,17 +33,18 @@
         {
             bool areValid = true;
 
-            if (string.IsNullOrWhiteSpace(this.carNoTextBox.Text))
+            if (string.IsNullOrWhiteSpace(this.carNoComboBox.Text))
             {
-                this.errorProvider.SetError(this.carNoTextBox, Messages.JobDetailsCarNoTextBoxValidationErrorMessage);
+                this.errorProvider.SetError(this.carNoComboBox, Messages.JobDetailsCarNoTextBoxValidationErrorMessage);
                 areValid = false;
             }
             else
             {
-                this.errorProvider.SetError(this.carNoTextBox, string.Empty);
+                this.errorProvider.SetError(this.carNoComboBox, string.Empty);
             }
 
-            if (!(this.jobDateDateTimePicker.Value <= DateTime.Now))
+            DateTime now = DateTime.Now;
+            if (DateTime.Compare(this.jobDateDateTimePicker.Value, now.AddDays(1)) > 0)
             {
                 this.errorProvider.SetError(this.jobDateDateTimePicker, Messages.JobDetailsJobDateDateTimePickerValidationErrorMessage);
                 areValid = false;
@@ -67,10 +69,14 @@
 
         private void JobDetailsForm_Load(object sender, EventArgs e)
         {
-            this.errorProvider.SetError(this.carNoTextBox, string.Empty);
+            this.errorProvider.SetError(this.carNoComboBox, string.Empty);
             this.errorProvider.SetError(this.jobDateDateTimePicker, string.Empty);
             this.errorProvider.SetError(this.workerIdNumericUpDown, string.Empty);
 
+            this.customerMaintenanceSystemDatabaseDataSet.Customer.Clear();
+            this.customerTableAdapter.Fill(this.customerMaintenanceSystemDatabaseDataSet.Customer);
+
+            this.customerMaintenanceSystemDatabaseDataSet.JobDetails.Clear();
             this.jobDetailsTableAdapter.Fill(this.customerMaintenanceSystemDatabaseDataSet.JobDetails);
         }
 

@@ -141,6 +141,9 @@
   <data name="JobDetailsJobWorkerIdNumericUpDownValidationErrorMessage" xml:space="preserve">
     <value>Worker ID should greater than 0.</value>
   </data>
+  <data name="JobDetailsTableIsUpdatedMessage" xml:space="preserve">
+    <value>The JobDetails table is updated.</value>
+  </data>
   <data name="ThereAreNoRecordsInTheCustomerTableMessage" xml:space="preserve">
     <value>(There are no records in the customer table.)</value>
   </data>

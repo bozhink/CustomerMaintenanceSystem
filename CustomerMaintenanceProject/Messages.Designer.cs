@@ -133,6 +133,15 @@ namespace CustomerMaintenanceSystem {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The JobDetails table is updated..
+        /// </summary>
+        internal static string JobDetailsTableIsUpdatedMessage {
+            get {
+                return ResourceManager.GetString("JobDetailsTableIsUpdatedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (There are no records in the customer table.).
         /// </summary>
         internal static string ThereAreNoRecordsInTheCustomerTableMessage {
