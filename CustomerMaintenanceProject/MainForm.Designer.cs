@@ -77,6 +77,7 @@
             this.workerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.W)));
             this.workerToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.workerToolStripMenuItem.Text = "&Worker";
+            this.workerToolStripMenuItem.Click += new System.EventHandler(this.WorkerToolStripMenuItem_Click);
             // 
             // customerToolStripMenuItem
             // 
@@ -84,6 +85,7 @@
             this.customerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
             this.customerToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.customerToolStripMenuItem.Text = "&Customer";
+            this.customerToolStripMenuItem.Click += new System.EventHandler(this.CustomerToolStripMenuItem_Click);
             // 
             // jobDetailsToolStripMenuItem
             // 
@@ -91,6 +93,7 @@
             this.jobDetailsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.J)));
             this.jobDetailsToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.jobDetailsToolStripMenuItem.Text = "&Job Details";
+            this.jobDetailsToolStripMenuItem.Click += new System.EventHandler(this.JobDetailsToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
@@ -98,6 +101,7 @@
             this.reportsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
             this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.reportsToolStripMenuItem.Text = "&Reports";
+            this.reportsToolStripMenuItem.Click += new System.EventHandler(this.ReportsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -121,6 +125,7 @@
             this.mainMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
