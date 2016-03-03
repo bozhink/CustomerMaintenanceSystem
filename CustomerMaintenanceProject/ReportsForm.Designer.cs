@@ -39,10 +39,10 @@
         {
             this.labelMessage = new System.Windows.Forms.Label();
             this.groupBoxReports = new System.Windows.Forms.GroupBox();
-            this.radioButtonMonthlyConsumableReport = new System.Windows.Forms.RadioButton();
-            this.radioButtonMonthlyConsumerVisitReport = new System.Windows.Forms.RadioButton();
-            this.radioButtonMonthlyBalancingAndAlignmentReport = new System.Windows.Forms.RadioButton();
             this.radioButtonMonthlyWorkerReport = new System.Windows.Forms.RadioButton();
+            this.radioButtonMonthlyBalancingAndAlignmentReport = new System.Windows.Forms.RadioButton();
+            this.radioButtonMonthlyConsumerVisitReport = new System.Windows.Forms.RadioButton();
+            this.radioButtonMonthlyConsumableReport = new System.Windows.Forms.RadioButton();
             this.buttonExit = new System.Windows.Forms.Button();
             this.groupBoxReports.SuspendLayout();
             this.SuspendLayout();
@@ -63,45 +63,12 @@
             this.groupBoxReports.Controls.Add(this.radioButtonMonthlyBalancingAndAlignmentReport);
             this.groupBoxReports.Controls.Add(this.radioButtonMonthlyConsumerVisitReport);
             this.groupBoxReports.Controls.Add(this.radioButtonMonthlyConsumableReport);
-            this.groupBoxReports.Location = new System.Drawing.Point(13, 30);
+            this.groupBoxReports.Location = new System.Drawing.Point(13, 36);
             this.groupBoxReports.Name = "groupBoxReports";
-            this.groupBoxReports.Size = new System.Drawing.Size(227, 130);
+            this.groupBoxReports.Size = new System.Drawing.Size(227, 119);
             this.groupBoxReports.TabIndex = 1;
             this.groupBoxReports.TabStop = false;
             this.groupBoxReports.Text = "Reports";
-            // 
-            // radioButtonMonthlyConsumableReport
-            // 
-            this.radioButtonMonthlyConsumableReport.AutoSize = true;
-            this.radioButtonMonthlyConsumableReport.Location = new System.Drawing.Point(7, 20);
-            this.radioButtonMonthlyConsumableReport.Name = "radioButtonMonthlyConsumableReport";
-            this.radioButtonMonthlyConsumableReport.Size = new System.Drawing.Size(158, 17);
-            this.radioButtonMonthlyConsumableReport.TabIndex = 0;
-            this.radioButtonMonthlyConsumableReport.TabStop = true;
-            this.radioButtonMonthlyConsumableReport.Text = "Monthly Consumable Report";
-            this.radioButtonMonthlyConsumableReport.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonMonthlyConsumerVisitReport
-            // 
-            this.radioButtonMonthlyConsumerVisitReport.AutoSize = true;
-            this.radioButtonMonthlyConsumerVisitReport.Location = new System.Drawing.Point(7, 44);
-            this.radioButtonMonthlyConsumerVisitReport.Name = "radioButtonMonthlyConsumerVisitReport";
-            this.radioButtonMonthlyConsumerVisitReport.Size = new System.Drawing.Size(169, 17);
-            this.radioButtonMonthlyConsumerVisitReport.TabIndex = 1;
-            this.radioButtonMonthlyConsumerVisitReport.TabStop = true;
-            this.radioButtonMonthlyConsumerVisitReport.Text = "Monthly Consumer Visit Report";
-            this.radioButtonMonthlyConsumerVisitReport.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonMonthlyBalancingAndAlignmentReport
-            // 
-            this.radioButtonMonthlyBalancingAndAlignmentReport.AutoSize = true;
-            this.radioButtonMonthlyBalancingAndAlignmentReport.Location = new System.Drawing.Point(7, 68);
-            this.radioButtonMonthlyBalancingAndAlignmentReport.Name = "radioButtonMonthlyBalancingAndAlignmentReport";
-            this.radioButtonMonthlyBalancingAndAlignmentReport.Size = new System.Drawing.Size(217, 17);
-            this.radioButtonMonthlyBalancingAndAlignmentReport.TabIndex = 2;
-            this.radioButtonMonthlyBalancingAndAlignmentReport.TabStop = true;
-            this.radioButtonMonthlyBalancingAndAlignmentReport.Text = "Monthly Balancing and Alignment Report";
-            this.radioButtonMonthlyBalancingAndAlignmentReport.UseVisualStyleBackColor = true;
             // 
             // radioButtonMonthlyWorkerReport
             // 
@@ -114,6 +81,39 @@
             this.radioButtonMonthlyWorkerReport.Text = "Monthly Worker Report";
             this.radioButtonMonthlyWorkerReport.UseVisualStyleBackColor = true;
             // 
+            // radioButtonMonthlyBalancingAndAlignmentReport
+            // 
+            this.radioButtonMonthlyBalancingAndAlignmentReport.AutoSize = true;
+            this.radioButtonMonthlyBalancingAndAlignmentReport.Location = new System.Drawing.Point(7, 68);
+            this.radioButtonMonthlyBalancingAndAlignmentReport.Name = "radioButtonMonthlyBalancingAndAlignmentReport";
+            this.radioButtonMonthlyBalancingAndAlignmentReport.Size = new System.Drawing.Size(217, 17);
+            this.radioButtonMonthlyBalancingAndAlignmentReport.TabIndex = 2;
+            this.radioButtonMonthlyBalancingAndAlignmentReport.TabStop = true;
+            this.radioButtonMonthlyBalancingAndAlignmentReport.Text = "Monthly Balancing and Alignment Report";
+            this.radioButtonMonthlyBalancingAndAlignmentReport.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMonthlyConsumerVisitReport
+            // 
+            this.radioButtonMonthlyConsumerVisitReport.AutoSize = true;
+            this.radioButtonMonthlyConsumerVisitReport.Location = new System.Drawing.Point(7, 44);
+            this.radioButtonMonthlyConsumerVisitReport.Name = "radioButtonMonthlyConsumerVisitReport";
+            this.radioButtonMonthlyConsumerVisitReport.Size = new System.Drawing.Size(169, 17);
+            this.radioButtonMonthlyConsumerVisitReport.TabIndex = 1;
+            this.radioButtonMonthlyConsumerVisitReport.TabStop = true;
+            this.radioButtonMonthlyConsumerVisitReport.Text = "Monthly Consumer Visit Report";
+            this.radioButtonMonthlyConsumerVisitReport.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMonthlyConsumableReport
+            // 
+            this.radioButtonMonthlyConsumableReport.AutoSize = true;
+            this.radioButtonMonthlyConsumableReport.Location = new System.Drawing.Point(7, 20);
+            this.radioButtonMonthlyConsumableReport.Name = "radioButtonMonthlyConsumableReport";
+            this.radioButtonMonthlyConsumableReport.Size = new System.Drawing.Size(158, 17);
+            this.radioButtonMonthlyConsumableReport.TabIndex = 0;
+            this.radioButtonMonthlyConsumableReport.TabStop = true;
+            this.radioButtonMonthlyConsumableReport.Text = "Monthly Consumable Report";
+            this.radioButtonMonthlyConsumableReport.UseVisualStyleBackColor = true;
+            // 
             // buttonExit
             // 
             this.buttonExit.Location = new System.Drawing.Point(13, 167);
@@ -122,6 +122,7 @@
             this.buttonExit.TabIndex = 2;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
             // ReportsForm
             // 
@@ -137,6 +138,7 @@
             this.groupBoxReports.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
