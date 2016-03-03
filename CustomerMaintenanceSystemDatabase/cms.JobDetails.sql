@@ -14,7 +14,7 @@
     [OilFilter] INT NULL, 
     [GearOil] INT NULL, 
     [GearOilQty] INT NULL, 
-    [Point ] INT NULL, 
+    [Point] INT NULL, 
     [Condenser] INT NULL, 
     [Plug] INT NULL, 
     [PlugQty] INT NULL, 
