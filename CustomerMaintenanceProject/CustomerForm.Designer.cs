@@ -74,6 +74,7 @@
             // textBoxCarNo
             // 
             this.textBoxCarNo.Location = new System.Drawing.Point(62, 10);
+            this.textBoxCarNo.MaxLength = 15;
             this.textBoxCarNo.Name = "textBoxCarNo";
             this.textBoxCarNo.Size = new System.Drawing.Size(160, 20);
             this.textBoxCarNo.TabIndex = 1;
@@ -90,6 +91,7 @@
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(62, 37);
+            this.textBoxName.MaxLength = 255;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(160, 20);
             this.textBoxName.TabIndex = 3;
@@ -106,6 +108,7 @@
             // textBoxAddress
             // 
             this.textBoxAddress.Location = new System.Drawing.Point(322, 13);
+            this.textBoxAddress.MaxLength = 255;
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(160, 20);
             this.textBoxAddress.TabIndex = 5;
@@ -122,6 +125,7 @@
             // textBoxMake
             // 
             this.textBoxMake.Location = new System.Drawing.Point(322, 40);
+            this.textBoxMake.MaxLength = 50;
             this.textBoxMake.Name = "textBoxMake";
             this.textBoxMake.Size = new System.Drawing.Size(160, 20);
             this.textBoxMake.TabIndex = 7;
@@ -161,10 +165,11 @@
             this.buttonExit.TabIndex = 11;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
             // buttonPrevious
             // 
-            this.buttonPrevious.Location = new System.Drawing.Point(66, 139);
+            this.buttonPrevious.Location = new System.Drawing.Point(66, 136);
             this.buttonPrevious.Name = "buttonPrevious";
             this.buttonPrevious.Size = new System.Drawing.Size(23, 23);
             this.buttonPrevious.TabIndex = 12;
@@ -211,6 +216,7 @@
             this.Text = "Customers";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
