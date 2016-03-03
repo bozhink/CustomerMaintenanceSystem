@@ -29,8 +29,8 @@
 
         private void JobDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            JobDetailsForm jobDetailsForm = new JobDetailsForm();
-            jobDetailsForm.ShowDialog(this);
+            ////JobDetailsForm jobDetailsForm = new JobDetailsForm();
+            ////jobDetailsForm.ShowDialog(this);
         }
 
         private void ReportsToolStripMenuItem_Click(object sender, EventArgs e)
