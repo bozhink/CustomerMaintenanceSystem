@@ -2,7 +2,7 @@
 {
     public partial class MainForm
     {
-        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.MenuStrip mainMenu;
         private System.Windows.Forms.ToolStripMenuItem workerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customerToolStripMenuItem;
@@ -37,7 +37,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.workerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,15 +47,15 @@
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblTitle
+            // labelTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(30, 76);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(473, 38);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Customer Maintenance System";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(30, 76);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(473, 38);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "Customer Maintenance System";
             // 
             // mainMenu
             // 
@@ -69,7 +69,7 @@
             this.mainMenu.Name = "mainMenu";
             this.mainMenu.Size = new System.Drawing.Size(541, 24);
             this.mainMenu.TabIndex = 1;
-            this.mainMenu.Text = "menuStrip1";
+            this.mainMenu.Text = "Main Menu";
             // 
             // workerToolStripMenuItem
             // 
@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 282);
-            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.mainMenu);
             this.MainMenuStrip = this.mainMenu;
             this.Name = "MainForm";
