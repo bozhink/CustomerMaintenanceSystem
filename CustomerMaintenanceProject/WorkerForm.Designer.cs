@@ -1,4 +1,4 @@
-﻿namespace CustomerMaintenance
+﻿namespace CustomerMaintenanceSystem
 {
     public partial class WorkerForm
     {

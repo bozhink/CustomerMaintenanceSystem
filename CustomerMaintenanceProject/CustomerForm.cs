@@ -1,4 +1,4 @@
-﻿namespace CustomerMaintenance
+﻿namespace CustomerMaintenanceSystem
 {
     using System.Windows.Forms;
 

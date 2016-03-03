@@ -7,8 +7,8 @@
     <ProjectGuid>{B91FAEAB-16D2-4837-B649-7C78C4713C8C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CustomerMaintenance</RootNamespace>
-    <AssemblyName>CustomerMaintenance</AssemblyName>
+    <RootNamespace>CustomerMaintenanceSystem</RootNamespace>
+    <AssemblyName>CustomerMaintenanceSystem</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
