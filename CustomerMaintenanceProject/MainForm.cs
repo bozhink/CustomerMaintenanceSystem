@@ -23,8 +23,8 @@
 
         private void CustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CustomerForm customerForm = new CustomerForm();
-            customerForm.ShowDialog(this);
+            ////CustomerForm customerForm = new CustomerForm();
+            ////customerForm.ShowDialog(this);
         }
 
         private void JobDetailsToolStripMenuItem_Click(object sender, EventArgs e)
