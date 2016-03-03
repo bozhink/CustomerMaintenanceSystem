@@ -4,10 +4,16 @@
 
     public partial class CustomerForm : Form
     {
+        private readonly string customerTableName;
+
         public CustomerForm()
         {
             this.InitializeComponent();
+
+            this.customerTableName = this.customerMaintenanceSystemDatabaseDataSet.Customer.TableName;
         }
+
+        private BindingManagerBase BindingManager => this.BindingContext[this.customerMaintenanceSystemDatabaseDataSet, this.customerTableName];
 
         private void ButtonExit_Click(object sender, System.EventArgs e)
         {
@@ -20,6 +26,7 @@
             this.errorProviderCustomersForm.SetError(this.textBoxCarNo, string.Empty);
             this.errorProviderCustomersForm.SetError(this.textBoxMake, string.Empty);
             this.errorProviderCustomersForm.SetError(this.textBoxName, string.Empty);
+            this.CurrentPosition();
         }
 
         private void ButtonSave_Click(object sender, System.EventArgs e)
@@ -36,7 +43,8 @@
 
             if (canSave)
             {
-                // TODO: Add db save logic.
+                this.customerTableAdapter.Update(this.customerMaintenanceSystemDatabaseDataSet.Customer);
+                MessageBox.Show(Messages.CustomerTableIsUpdatedMessage);
             }
         }
 
@@ -56,6 +64,50 @@
             }
 
             return isvalid;
+        }
+
+        private void ButtonEdit_Click(object sender, System.EventArgs e)
+        {
+            this.ReloadCustomerData();
+        }
+
+        private void ButtonCancel_Click(object sender, System.EventArgs e)
+        {
+            this.ReloadCustomerData();
+        }
+
+        private void ButtonPrevious_Click(object sender, System.EventArgs e)
+        {
+            this.BindingManager.Position -= 1;
+            this.CurrentPosition();
+        }
+
+        private void ButtonNext_Click(object sender, System.EventArgs e)
+        {
+            this.BindingManager.Position += 1;
+            this.CurrentPosition();
+        }
+
+        private void ReloadCustomerData()
+        {
+            this.customerMaintenanceSystemDatabaseDataSet.Customer.Clear();
+            this.customerTableAdapter.Fill(this.customerMaintenanceSystemDatabaseDataSet.Customer);
+            this.CurrentPosition();
+        }
+
+        private void CurrentPosition()
+        {
+            int numberOfRecords = this.BindingManager.Count;
+
+            if (numberOfRecords < 1)
+            {
+                this.textBoxDisplayPosition.Text = Messages.ThereAreNoRecordsInTheCustomerTableMessage;
+            }
+            else
+            {
+                int currentPostion = this.BindingManager.Position + 1;
+                this.textBoxDisplayPosition.Text = $"{currentPostion} of {numberOfRecords}";
+            }
         }
     }
 }

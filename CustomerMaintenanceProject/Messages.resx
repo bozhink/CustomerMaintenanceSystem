@@ -129,11 +129,17 @@
   <data name="CustomerNameTextBoxValidationErrorMessage" xml:space="preserve">
     <value>Please specify a valid name.</value>
   </data>
+  <data name="CustomerTableIsUpdatedMessage" xml:space="preserve">
+    <value>The Customer table is updated.</value>
+  </data>
   <data name="JobDetailsCarNoTextBoxValidationErrorMessage" xml:space="preserve">
     <value>Please specify a valid car number.</value>
   </data>
   <data name="JobDetailsJobDateDateTimePickerValidationErrorMessage" xml:space="preserve">
     <value>Job date should not be in the future.</value>
+  </data>
+  <data name="ThereAreNoRecordsInTheCustomerTableMessage" xml:space="preserve">
+    <value>(There are no records in the customer table.)</value>
   </data>
   <data name="WorkerTableIsUpdatedMessage" xml:space="preserve">
     <value>The Worker table is updated.</value>

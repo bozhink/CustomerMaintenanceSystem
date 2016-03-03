@@ -15,7 +15,7 @@
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonPrevious;
-        private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.TextBox textBoxDisplayPosition;
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.ErrorProvider errorProviderCustomersForm;
 
@@ -49,6 +49,7 @@
             this.components = new System.ComponentModel.Container();
             this.labelCarNo = new System.Windows.Forms.Label();
             this.textBoxCarNo = new System.Windows.Forms.TextBox();
+            this.customerMaintenanceSystemDatabaseDataSet = new CustomerMaintenanceSystem.CustomerMaintenanceSystemDatabaseDataSet();
             this.labelName = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelAddress = new System.Windows.Forms.Label();
@@ -60,9 +61,11 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonPrevious = new System.Windows.Forms.Button();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.textBoxDisplayPosition = new System.Windows.Forms.TextBox();
             this.buttonNext = new System.Windows.Forms.Button();
             this.errorProviderCustomersForm = new System.Windows.Forms.ErrorProvider(this.components);
+            this.customerTableAdapter = new CustomerMaintenanceSystem.CustomerMaintenanceSystemDatabaseDataSetTableAdapters.CustomerTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.customerMaintenanceSystemDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderCustomersForm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,12 +80,18 @@
             // 
             // textBoxCarNo
             // 
+            this.textBoxCarNo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerMaintenanceSystemDatabaseDataSet, "Customer.CarNo", true));
             this.errorProviderCustomersForm.SetError(this.textBoxCarNo, "Car No. should be between 6 and 15 symbols.");
             this.textBoxCarNo.Location = new System.Drawing.Point(62, 10);
             this.textBoxCarNo.MaxLength = 15;
             this.textBoxCarNo.Name = "textBoxCarNo";
             this.textBoxCarNo.Size = new System.Drawing.Size(160, 20);
             this.textBoxCarNo.TabIndex = 1;
+            // 
+            // customerMaintenanceSystemDatabaseDataSet
+            // 
+            this.customerMaintenanceSystemDatabaseDataSet.DataSetName = "CustomerMaintenanceSystemDatabaseDataSet";
+            this.customerMaintenanceSystemDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelName
             // 
@@ -95,6 +104,7 @@
             // 
             // textBoxName
             // 
+            this.textBoxName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerMaintenanceSystemDatabaseDataSet, "Customer.Name", true));
             this.errorProviderCustomersForm.SetError(this.textBoxName, "Name should not be empty or whitespace.");
             this.textBoxName.Location = new System.Drawing.Point(62, 37);
             this.textBoxName.MaxLength = 255;
@@ -113,6 +123,7 @@
             // 
             // textBoxAddress
             // 
+            this.textBoxAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerMaintenanceSystemDatabaseDataSet, "Customer.Address", true));
             this.errorProviderCustomersForm.SetError(this.textBoxAddress, "Address should not be empty or whitespace.");
             this.textBoxAddress.Location = new System.Drawing.Point(322, 13);
             this.textBoxAddress.MaxLength = 255;
@@ -131,6 +142,7 @@
             // 
             // textBoxMake
             // 
+            this.textBoxMake.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerMaintenanceSystemDatabaseDataSet, "Customer.Make", true));
             this.errorProviderCustomersForm.SetError(this.textBoxMake, "Make should not be empty or whitespace.");
             this.textBoxMake.Location = new System.Drawing.Point(322, 40);
             this.textBoxMake.MaxLength = 50;
@@ -156,6 +168,7 @@
             this.buttonEdit.TabIndex = 9;
             this.buttonEdit.Text = "Edit";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
             // buttonCancel
             // 
@@ -165,6 +178,7 @@
             this.buttonCancel.TabIndex = 10;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
             // buttonExit
             // 
@@ -184,13 +198,16 @@
             this.buttonPrevious.TabIndex = 12;
             this.buttonPrevious.Text = "<";
             this.buttonPrevious.UseVisualStyleBackColor = true;
+            this.buttonPrevious.Click += new System.EventHandler(this.ButtonPrevious_Click);
             // 
-            // textBoxSearch
+            // textBoxDisplayPosition
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(95, 139);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(260, 20);
-            this.textBoxSearch.TabIndex = 13;
+            this.textBoxDisplayPosition.Enabled = false;
+            this.textBoxDisplayPosition.Location = new System.Drawing.Point(95, 139);
+            this.textBoxDisplayPosition.Name = "textBoxDisplayPosition";
+            this.textBoxDisplayPosition.Size = new System.Drawing.Size(260, 20);
+            this.textBoxDisplayPosition.TabIndex = 13;
+            this.textBoxDisplayPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonNext
             // 
@@ -200,10 +217,15 @@
             this.buttonNext.TabIndex = 14;
             this.buttonNext.Text = ">";
             this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.ButtonNext_Click);
             // 
             // errorProviderCustomersForm
             // 
             this.errorProviderCustomersForm.ContainerControl = this;
+            // 
+            // customerTableAdapter
+            // 
+            this.customerTableAdapter.ClearBeforeFill = true;
             // 
             // CustomerForm
             // 
@@ -211,7 +233,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 181);
             this.Controls.Add(this.buttonNext);
-            this.Controls.Add(this.textBoxSearch);
+            this.Controls.Add(this.textBoxDisplayPosition);
             this.Controls.Add(this.buttonPrevious);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonCancel);
@@ -228,6 +250,7 @@
             this.Name = "CustomerForm";
             this.Text = "Customers";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.customerMaintenanceSystemDatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderCustomersForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -235,5 +258,8 @@
         }
 
         #endregion
+
+        private CustomerMaintenanceSystemDatabaseDataSet customerMaintenanceSystemDatabaseDataSet;
+        private CustomerMaintenanceSystemDatabaseDataSetTableAdapters.CustomerTableAdapter customerTableAdapter;
     }
 }

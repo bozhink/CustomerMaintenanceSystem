@@ -97,6 +97,15 @@ namespace CustomerMaintenanceSystem {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The Customer table is updated..
+        /// </summary>
+        internal static string CustomerTableIsUpdatedMessage {
+            get {
+                return ResourceManager.GetString("CustomerTableIsUpdatedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please specify a valid car number..
         /// </summary>
         internal static string JobDetailsCarNoTextBoxValidationErrorMessage {
@@ -111,6 +120,15 @@ namespace CustomerMaintenanceSystem {
         internal static string JobDetailsJobDateDateTimePickerValidationErrorMessage {
             get {
                 return ResourceManager.GetString("JobDetailsJobDateDateTimePickerValidationErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (There are no records in the customer table.).
+        /// </summary>
+        internal static string ThereAreNoRecordsInTheCustomerTableMessage {
+            get {
+                return ResourceManager.GetString("ThereAreNoRecordsInTheCustomerTableMessage", resourceCulture);
             }
         }
         
