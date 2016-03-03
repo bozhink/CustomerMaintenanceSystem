@@ -2,21 +2,21 @@
 {
     public partial class CustomerForm
     {
-        private System.Windows.Forms.Label lblCarNo;
-        private System.Windows.Forms.TextBox textboxCarNo;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.TextBox textboxName;
-        private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.TextBox textboxAddress;
-        private System.Windows.Forms.Label lblMake;
-        private System.Windows.Forms.TextBox textboxMake;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnPrevious;
-        private System.Windows.Forms.TextBox textboxSearch;
-        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Label labelCarNo;
+        private System.Windows.Forms.TextBox textBoxCarNo;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label labelAddress;
+        private System.Windows.Forms.TextBox textBoxAddress;
+        private System.Windows.Forms.Label labelMake;
+        private System.Windows.Forms.TextBox textBoxMake;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Button buttonPrevious;
+        private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.Button buttonNext;
 
         /// <summary>
         /// Required designer variable.
@@ -45,168 +45,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblCarNo = new System.Windows.Forms.Label();
-            this.textboxCarNo = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.textboxName = new System.Windows.Forms.TextBox();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.textboxAddress = new System.Windows.Forms.TextBox();
-            this.lblMake = new System.Windows.Forms.Label();
-            this.textboxMake = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnPrevious = new System.Windows.Forms.Button();
-            this.textboxSearch = new System.Windows.Forms.TextBox();
-            this.btnNext = new System.Windows.Forms.Button();
+            this.labelCarNo = new System.Windows.Forms.Label();
+            this.textBoxCarNo = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.labelAddress = new System.Windows.Forms.Label();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.labelMake = new System.Windows.Forms.Label();
+            this.textBoxMake = new System.Windows.Forms.TextBox();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.buttonPrevious = new System.Windows.Forms.Button();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.buttonNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblCarNo
+            // labelCarNo
             // 
-            this.lblCarNo.AutoSize = true;
-            this.lblCarNo.Location = new System.Drawing.Point(13, 13);
-            this.lblCarNo.Name = "lblCarNo";
-            this.lblCarNo.Size = new System.Drawing.Size(43, 13);
-            this.lblCarNo.TabIndex = 0;
-            this.lblCarNo.Text = "Car No.";
+            this.labelCarNo.AutoSize = true;
+            this.labelCarNo.Location = new System.Drawing.Point(13, 13);
+            this.labelCarNo.Name = "labelCarNo";
+            this.labelCarNo.Size = new System.Drawing.Size(43, 13);
+            this.labelCarNo.TabIndex = 0;
+            this.labelCarNo.Text = "Car No.";
             // 
-            // tbCarNo
+            // textBoxCarNo
             // 
-            this.textboxCarNo.Location = new System.Drawing.Point(62, 10);
-            this.textboxCarNo.Name = "tbCarNo";
-            this.textboxCarNo.Size = new System.Drawing.Size(160, 20);
-            this.textboxCarNo.TabIndex = 1;
+            this.textBoxCarNo.Location = new System.Drawing.Point(62, 10);
+            this.textBoxCarNo.Name = "textBoxCarNo";
+            this.textBoxCarNo.Size = new System.Drawing.Size(160, 20);
+            this.textBoxCarNo.TabIndex = 1;
             // 
-            // lblName
+            // labelName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(12, 40);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 2;
-            this.lblName.Text = "Name";
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(12, 40);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(35, 13);
+            this.labelName.TabIndex = 2;
+            this.labelName.Text = "Name";
             // 
-            // tbName
+            // textBoxName
             // 
-            this.textboxName.Location = new System.Drawing.Point(62, 37);
-            this.textboxName.Name = "tbName";
-            this.textboxName.Size = new System.Drawing.Size(160, 20);
-            this.textboxName.TabIndex = 3;
+            this.textBoxName.Location = new System.Drawing.Point(62, 37);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(160, 20);
+            this.textBoxName.TabIndex = 3;
             // 
-            // lblAddress
+            // labelAddress
             // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(270, 13);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(45, 13);
-            this.lblAddress.TabIndex = 4;
-            this.lblAddress.Text = "Address";
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Location = new System.Drawing.Point(270, 13);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(45, 13);
+            this.labelAddress.TabIndex = 4;
+            this.labelAddress.Text = "Address";
             // 
-            // tbAddress
+            // textBoxAddress
             // 
-            this.textboxAddress.Location = new System.Drawing.Point(322, 13);
-            this.textboxAddress.Name = "tbAddress";
-            this.textboxAddress.Size = new System.Drawing.Size(160, 20);
-            this.textboxAddress.TabIndex = 5;
+            this.textBoxAddress.Location = new System.Drawing.Point(322, 13);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(160, 20);
+            this.textBoxAddress.TabIndex = 5;
             // 
-            // lblMake
+            // labelMake
             // 
-            this.lblMake.AutoSize = true;
-            this.lblMake.Location = new System.Drawing.Point(273, 40);
-            this.lblMake.Name = "lblMake";
-            this.lblMake.Size = new System.Drawing.Size(34, 13);
-            this.lblMake.TabIndex = 6;
-            this.lblMake.Text = "Make";
+            this.labelMake.AutoSize = true;
+            this.labelMake.Location = new System.Drawing.Point(273, 40);
+            this.labelMake.Name = "labelMake";
+            this.labelMake.Size = new System.Drawing.Size(34, 13);
+            this.labelMake.TabIndex = 6;
+            this.labelMake.Text = "Make";
             // 
-            // tbMake
+            // textBoxMake
             // 
-            this.textboxMake.Location = new System.Drawing.Point(322, 40);
-            this.textboxMake.Name = "tbMake";
-            this.textboxMake.Size = new System.Drawing.Size(160, 20);
-            this.textboxMake.TabIndex = 7;
+            this.textBoxMake.Location = new System.Drawing.Point(322, 40);
+            this.textBoxMake.Name = "textBoxMake";
+            this.textBoxMake.Size = new System.Drawing.Size(160, 20);
+            this.textBoxMake.TabIndex = 7;
             // 
-            // btnSave
+            // buttonSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(66, 88);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 8;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Location = new System.Drawing.Point(66, 88);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(75, 23);
+            this.buttonSave.TabIndex = 8;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = true;
             // 
-            // btnEdit
+            // buttonEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(147, 88);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnEdit.TabIndex = 9;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Location = new System.Drawing.Point(147, 88);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(75, 23);
+            this.buttonEdit.TabIndex = 9;
+            this.buttonEdit.Text = "Edit";
+            this.buttonEdit.UseVisualStyleBackColor = true;
             // 
-            // btnCancel
+            // buttonCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(228, 88);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 10;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Location = new System.Drawing.Point(228, 88);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.TabIndex = 10;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = true;
             // 
-            // btnExit
+            // buttonExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(309, 88);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 11;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Location = new System.Drawing.Point(309, 88);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.TabIndex = 11;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = true;
             // 
-            // btnPrevious
+            // buttonPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(66, 139);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(23, 23);
-            this.btnPrevious.TabIndex = 12;
-            this.btnPrevious.Text = "<";
-            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.buttonPrevious.Location = new System.Drawing.Point(66, 139);
+            this.buttonPrevious.Name = "buttonPrevious";
+            this.buttonPrevious.Size = new System.Drawing.Size(23, 23);
+            this.buttonPrevious.TabIndex = 12;
+            this.buttonPrevious.Text = "<";
+            this.buttonPrevious.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxSearch
             // 
-            this.textboxSearch.Location = new System.Drawing.Point(95, 139);
-            this.textboxSearch.Name = "textBox1";
-            this.textboxSearch.Size = new System.Drawing.Size(260, 20);
-            this.textboxSearch.TabIndex = 13;
+            this.textBoxSearch.Location = new System.Drawing.Point(95, 139);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(260, 20);
+            this.textBoxSearch.TabIndex = 13;
             // 
-            // btnNext
+            // buttonNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(361, 136);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(23, 23);
-            this.btnNext.TabIndex = 14;
-            this.btnNext.Text = ">";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Location = new System.Drawing.Point(361, 136);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(23, 23);
+            this.buttonNext.TabIndex = 14;
+            this.buttonNext.Text = ">";
+            this.buttonNext.UseVisualStyleBackColor = true;
             // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 181);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.textboxSearch);
-            this.Controls.Add(this.btnPrevious);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.textboxMake);
-            this.Controls.Add(this.lblMake);
-            this.Controls.Add(this.textboxAddress);
-            this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.textboxName);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.textboxCarNo);
-            this.Controls.Add(this.lblCarNo);
+            this.Controls.Add(this.buttonNext);
+            this.Controls.Add(this.textBoxSearch);
+            this.Controls.Add(this.buttonPrevious);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.buttonCancel);
+            this.Controls.Add(this.buttonEdit);
+            this.Controls.Add(this.buttonSave);
+            this.Controls.Add(this.textBoxMake);
+            this.Controls.Add(this.labelMake);
+            this.Controls.Add(this.textBoxAddress);
+            this.Controls.Add(this.labelAddress);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.textBoxCarNo);
+            this.Controls.Add(this.labelCarNo);
             this.Name = "CustomerForm";
             this.Text = "Customers";
             this.ResumeLayout(false);
