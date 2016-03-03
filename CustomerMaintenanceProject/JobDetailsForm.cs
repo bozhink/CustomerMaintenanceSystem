@@ -8,5 +8,10 @@
         {
             this.InitializeComponent();
         }
+
+        private void ButtonExit_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
