@@ -113,5 +113,14 @@ namespace CustomerMaintenanceSystem {
                 return ResourceManager.GetString("JobDetailsJobDateDateTimePickerValidationErrorMessage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Worker table is updated..
+        /// </summary>
+        internal static string WorkerTableIsUpdatedMessage {
+            get {
+                return ResourceManager.GetString("WorkerTableIsUpdatedMessage", resourceCulture);
+            }
+        }
     }
 }

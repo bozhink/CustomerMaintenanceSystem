@@ -53,6 +53,11 @@
     <Compile Include="CustomerForm.Designer.cs">
       <DependentUpon>CustomerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerMaintenanceSystemDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerMaintenanceSystemDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="JobDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +118,17 @@
     <EmbeddedResource Include="WorkerForm.resx">
       <DependentUpon>WorkerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CustomerMaintenanceSystemDatabaseDataSet.xsc">
+      <DependentUpon>CustomerMaintenanceSystemDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerMaintenanceSystemDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerMaintenanceSystemDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomerMaintenanceSystemDatabaseDataSet.xss">
+      <DependentUpon>CustomerMaintenanceSystemDatabaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

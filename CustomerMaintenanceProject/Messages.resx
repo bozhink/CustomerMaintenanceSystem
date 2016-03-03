@@ -135,4 +135,7 @@
   <data name="JobDetailsJobDateDateTimePickerValidationErrorMessage" xml:space="preserve">
     <value>Job date should not be in the future.</value>
   </data>
+  <data name="WorkerTableIsUpdatedMessage" xml:space="preserve">
+    <value>The Worker table is updated.</value>
+  </data>
 </root>
