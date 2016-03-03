@@ -17,6 +17,7 @@
         private System.Windows.Forms.Button buttonPrevious;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.ErrorProvider errorProviderCustomersForm;
 
         /// <summary>
         /// Required designer variable.
@@ -234,7 +235,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ErrorProvider errorProviderCustomersForm;
     }
 }
