@@ -124,6 +124,15 @@ namespace CustomerMaintenanceSystem {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Worker ID should greater than 0..
+        /// </summary>
+        internal static string JobDetailsJobWorkerIdNumericUpDownValidationErrorMessage {
+            get {
+                return ResourceManager.GetString("JobDetailsJobWorkerIdNumericUpDownValidationErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (There are no records in the customer table.).
         /// </summary>
         internal static string ThereAreNoRecordsInTheCustomerTableMessage {

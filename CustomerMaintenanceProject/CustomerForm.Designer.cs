@@ -18,6 +18,8 @@
         private System.Windows.Forms.TextBox textBoxDisplayPosition;
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.ErrorProvider errorProviderCustomersForm;
+        private CustomerMaintenanceSystemDatabaseDataSet customerMaintenanceSystemDatabaseDataSet;
+        private CustomerMaintenanceSystemDatabaseDataSetTableAdapters.CustomerTableAdapter customerTableAdapter;
 
         /// <summary>
         /// Required designer variable.
@@ -258,8 +260,5 @@
         }
 
         #endregion
-
-        private CustomerMaintenanceSystemDatabaseDataSet customerMaintenanceSystemDatabaseDataSet;
-        private CustomerMaintenanceSystemDatabaseDataSetTableAdapters.CustomerTableAdapter customerTableAdapter;
     }
 }

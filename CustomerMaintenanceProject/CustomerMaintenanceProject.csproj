@@ -58,6 +58,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomerMaintenanceSystemDatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="JobDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobDetailsForm.Designer.cs">
+      <DependentUpon>JobDetailsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </Compile>
     <EmbeddedResource Include="CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobDetailsForm.resx">
+      <DependentUpon>JobDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
