@@ -45,6 +45,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelCarNo = new System.Windows.Forms.Label();
             this.textBoxCarNo = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
@@ -60,6 +61,8 @@
             this.buttonPrevious = new System.Windows.Forms.Button();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonNext = new System.Windows.Forms.Button();
+            this.errorProviderCustomersForm = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderCustomersForm)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCarNo
@@ -73,6 +76,7 @@
             // 
             // textBoxCarNo
             // 
+            this.errorProviderCustomersForm.SetError(this.textBoxCarNo, "Car No. should be between 6 and 15 symbols.");
             this.textBoxCarNo.Location = new System.Drawing.Point(62, 10);
             this.textBoxCarNo.MaxLength = 15;
             this.textBoxCarNo.Name = "textBoxCarNo";
@@ -90,6 +94,7 @@
             // 
             // textBoxName
             // 
+            this.errorProviderCustomersForm.SetError(this.textBoxName, "Name should not be empty or whitespace.");
             this.textBoxName.Location = new System.Drawing.Point(62, 37);
             this.textBoxName.MaxLength = 255;
             this.textBoxName.Name = "textBoxName";
@@ -107,6 +112,7 @@
             // 
             // textBoxAddress
             // 
+            this.errorProviderCustomersForm.SetError(this.textBoxAddress, "Address should not be empty or whitespace.");
             this.textBoxAddress.Location = new System.Drawing.Point(322, 13);
             this.textBoxAddress.MaxLength = 255;
             this.textBoxAddress.Name = "textBoxAddress";
@@ -124,6 +130,7 @@
             // 
             // textBoxMake
             // 
+            this.errorProviderCustomersForm.SetError(this.textBoxMake, "Make should not be empty or whitespace.");
             this.textBoxMake.Location = new System.Drawing.Point(322, 40);
             this.textBoxMake.MaxLength = 50;
             this.textBoxMake.Name = "textBoxMake";
@@ -138,6 +145,7 @@
             this.buttonSave.TabIndex = 8;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
             // buttonEdit
             // 
@@ -192,6 +200,10 @@
             this.buttonNext.Text = ">";
             this.buttonNext.UseVisualStyleBackColor = true;
             // 
+            // errorProviderCustomersForm
+            // 
+            this.errorProviderCustomersForm.ContainerControl = this;
+            // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,11 +226,15 @@
             this.Controls.Add(this.labelCarNo);
             this.Name = "CustomerForm";
             this.Text = "Customers";
+            this.Load += new System.EventHandler(this.CustomerForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderCustomersForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ErrorProvider errorProviderCustomersForm;
     }
 }
